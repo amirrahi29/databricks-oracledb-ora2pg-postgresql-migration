@@ -20,12 +20,16 @@ OUTPUT tables.sql
 PG_VERSION 15
 
 
-Step 2 (Schema export)
+
+
+
+
+Step 1 (Schema export)
 ====================
 cd ~/migration
 ora2pg -c ora2pg.conf -t TABLE
 
-Step 3 (Schema PostgreSQL में डालो)
+Step 2 (Schema PostgreSQL में डालो)
 =============================
 psql -h rahipostgresql.postgres.database.azure.com \
      -U amirrahi29 \
